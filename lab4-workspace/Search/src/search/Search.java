@@ -9,7 +9,9 @@ public class Search {
 			LineNumberReader lnr = new LineNumberReader(new FileReader(args[2]));
 			String line;
 			while ((line = lnr.readLine()) != null) {
-				System.out.println(lnr.getLineNumber()); // TODO: only write number if line contains word
+				if (line.contains(args[1])) {
+					System.out.println(lnr.getLineNumber());
+				}
 			}
 		} catch (Exception e) {
 			System.err.println(e.getClass() + "\nPlease provide input on format "
