@@ -13,6 +13,7 @@ public class Search {
 					System.out.println(lnr.getLineNumber());
 				}
 			}
+			lnr.close();
 		} catch (Exception e) {
 			System.err.println(e.getClass() + "\nPlease provide input on format "
 					+ "\"search cat demo.txt\", and make sure file exists");
