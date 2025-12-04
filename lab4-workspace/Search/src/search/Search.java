@@ -11,6 +11,7 @@ public class Search {
 			while ((line = lnr.readLine()) != null) {
 				if (line.contains(args[1])) {
 					System.out.println(lnr.getLineNumber());
+					// System.out.println(line); //option for writing out line (commented out to not not fail test suite)
 				}
 			}
 			lnr.close();
